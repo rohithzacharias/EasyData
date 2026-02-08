@@ -86,3 +86,35 @@ Exports include:
 ---
 
 ## 🧠 Architecture
+Frontend (Next.js)
+↓
+REST API
+↓
+Backend (FastAPI + Pandas)
+
+
+- Session-based in-memory storage
+- RESTful API design
+- Frontend and backend are fully decoupled
+
+---
+
+## ▶️ Running Locally
+
+### Backend
+```bash
+cd api
+pip install -r requirements.txt
+uvicorn app:app --reload --port 8000
+
+### **Frontend**
+cd frontend
+npm install
+npm run dev
+
+### **Access URLs**
+
+Frontend → http://localhost:3000
+
+Backend → http://localhost:8000
+
